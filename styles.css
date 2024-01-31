@@ -1,0 +1,80 @@
+/* Selector CSS */
+
+body {
+    background-color: #cacaca;
+}
+section {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+h2{
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 15px;
+}
+div {
+    display: flex;
+    flex-direction: row;
+}
+thead tr th, tbody tr td{
+    padding: 8px;
+    text-align: center;
+}
+p::first-letter {
+    font-size: 30px;
+}
+p {
+    font-size: 20px;
+}
+a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+li {
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+figcaption{
+    text-align: center;
+}
+hr{
+    border: 0.7px solid black;
+    width: 33.33%;
+}
+
+select option[value='rat'] {
+    background: aliceblue;
+}
+
+/* Classes */
+
+div.side-by-side {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 40%;
+    padding: 5%;
+    flex-direction: column;
+}
+
+div.button {
+    border: 1.5px solid black;
+    border-radius: 20px;
+    padding: 7px;
+    
+}
+
+div.button:hover {
+    background-color: #e8e8e8;
+}
+
+*#pic {
+    border: 1px solid black;
+    border-radius: 20px;
+}

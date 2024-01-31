@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>a01</title>
+    </head>
+    <body>
+        <section style="justify-content: start;">
+            <div class="button">
+                <a href="index.html">Home</a>
+            </div>
+        </section>
+        <section>
+
+        </section>
+        <section style="flex-direction: column;">
+            <h1>Traits</h1>
+            <hr>
+            <select id="selector" onchange="change()">
+                <option selected disabled>Choose your Animal</option>
+                <option value="rat">Rat</option>
+                <option value="ox">Ox</option>
+                <option value="tiger">Tiger</option>
+                <option value="rabbit">Rabbit</option>
+                <option value="dragon">Dragon</option>
+                <option value="snake">Snake</option>
+                <option value="horse">Horse</option>
+                <option value="sheep">Sheep</option>
+                <option value="monkey">Monkey</option>
+                <option value="rooster">Rooster</option>
+                <option value="dog">Dog</option>
+                <option value="pig">Pig</option>
+            </select>
+            <script>
+                function change() {
+                const val = document.getElementById('selector').value;
+                document.getElementById(val).style.color = 'red';
+                document.getElementById('selector').style.display = 'none';
+                
+                }
+                
+            </script>
+            <div style="flex-direction: column;">
+                <ul>
+                    <li id='rat' class="item">Rat: Quick-witted, smart, charming, and persuasive.</li>
+                    <li id='ox' class="item">Ox: Patient, kind, stubborn, and conservative.</li>
+                    <li id='tiger' class="item">Tiger: Authoritative, emotional, courageous, and intense.</li>
+                    <li id='rabbit' class="item">Rabbit: Popular, compassionate, and sincere.</li>
+                    <li id='dragon' class="item">Dragon: Energetic, fearless, warm-hearted, and charismatic.</li>
+                    <li id='snake' class="item">Snake: Charming, gregarious, introverted, generous, and smart.</li>
+                    <li id='horse' class="item">Horse: Energetic, independent, impatient, and enjoy traveling.</li>
+                    <li id='sheep' class="item">Sheep: Mild-mannered, shy, kind, and peace-loving.</li>
+                    <li id='monkey' class="item">Monkey: Fun, energetic, and active.</li>
+                    <li id='rooster' class="item">Rooster: Independent, practical, hard-working, and observant.</li>
+                    <li id='dog' class="item">Dog: Patient, diligent, generous, faithful, and kind.</li>
+                    <li id='pig' class="item">Pig: Loving, tolerant, honest, and appreciative of luxury.</li>
+                </ul>
+            </div>
+            
+        </section>
+    </body>
+</html>
